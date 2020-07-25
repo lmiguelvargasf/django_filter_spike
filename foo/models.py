@@ -5,3 +5,6 @@ class Document(models.Model):
     name = models.CharField(max_length=30)
     size = models.PositiveIntegerField(default=0)
     file_type = models.CharField(max_length=10, blank=True)
+
+    def __str__(self) -> str:
+        return self.name
