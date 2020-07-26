@@ -6,3 +6,4 @@ from foo.models import Author
 class AuthorFilter(filters.FilterSet):
     class Meta:
         model = Author
+        fields = ('first_name', 'last_name', 'email')
