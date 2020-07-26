@@ -4,10 +4,16 @@ The purpose of this "project" is to play around with [Django's Managers][manager
 
 ## Managers
 
-### Custom Manager
+### Custom manager overrides default manager
 
 I have implemented a custom manager to override the default `Manager`
 which can be accessed throught `Model.objects`. ([see logic][custom-manager])
 
-[custom-manager]: ./foo/models.py
+### Custom manager and default manager
+
+It is possible to have multiple managers for the same model.
+I have implemented two custom managers besides the default manager. ([see logic][multiple-managers])
+
+[custom-manager]: ./foo/models/document.py
 [managers]: https://docs.djangoproject.com/en/dev/topics/db/managers/
+[multiple-managers]: ./foo/models/book.py
