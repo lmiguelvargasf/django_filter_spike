@@ -1,8 +1,8 @@
 from rest_framework.viewsets import ModelViewSet
 
-from foo.models import Author, Book
+from foo.models import Author, Book, Publisher
 from .filters import AuthorFilter, BookFilter
-from .serializers import AuthorSerializer, BookSerializer
+from .serializers import AuthorSerializer, BookSerializer, PublisherSerializer
 
 
 class AuthorViewSet(ModelViewSet):
@@ -15,3 +15,8 @@ class BookViewSet(ModelViewSet):
     queryset = Book.objects.all()
     serializer_class = BookSerializer
     filterset_class = BookFilter
+
+
+class PublisherViewSet(ModelViewSet):
+    queryset = Publisher.objects.all()
+    serializer_class = PublisherSerializer
