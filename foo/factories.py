@@ -8,3 +8,12 @@ class DocumentFactory(factory.django.DjangoModelFactory):
 
     class Meta:
         model = 'foo.Document'
+
+
+class BookFactory(factory.DjangoModelFactory):
+    title = factory.Faker('catch_phrase')
+    author = factory.Faker('name')
+    pages = FuzzyInteger(100, 500, 10)
+
+    class Meta:
+        model = 'foo.Book'
