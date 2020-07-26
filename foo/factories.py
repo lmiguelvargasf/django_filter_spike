@@ -1,28 +1,38 @@
 import factory
 from factory.fuzzy import FuzzyInteger, FuzzyChoice
 
+
 class DocumentFactory(factory.django.DjangoModelFactory):
-    name = factory.Faker('name')
+    name = factory.Faker("name")
     size = FuzzyInteger(10)
-    file_type = FuzzyChoice(['doc', 'txt', 'py', 'png', 'pdf'])
+    file_type = FuzzyChoice(["doc", "txt", "py", "png", "pdf"])
 
     class Meta:
-        model = 'foo.Document'
+        model = "foo.Document"
 
 
 class BookFactory(factory.DjangoModelFactory):
-    title = factory.Faker('catch_phrase')
-    author = factory.Faker('name')
+    title = factory.Faker("catch_phrase")
+    author = factory.Faker("name")
     pages = FuzzyInteger(100, 500, 10)
 
     class Meta:
-        model = 'foo.Book'
+        model = "foo.Book"
 
 
 class AuthorFactory(factory.DjangoModelFactory):
-    first_name = factory.Faker('first_name')
-    last_name = factory.Faker('last_name')
-    email = factory.Faker('email')
+    first_name = factory.Faker("first_name")
+    last_name = factory.Faker("last_name")
+    email = factory.Faker("email")
 
     class Meta:
-        model = 'foo.Author'
+        model = "foo.Author"
+
+
+class PublisherFactory(factory.DjangoModelFactory):
+    name = factory.Faker("company")
+    address = factory.Faker("address")
+    country = factory.Faker("country")
+
+    class Meta:
+        model = "foo.Publisher"
