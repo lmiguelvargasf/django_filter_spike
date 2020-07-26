@@ -1,6 +1,6 @@
-from .document import Document
-from .book import Book
-from .author import Author
-from .publisher import Publisher
+from .document import *
+from .book import *
+from .author import *
+from .publisher import *
 
-__all__ = [Document, Book, Author, Publisher]
+__all__ = ['Document', 'Book', 'Author', 'Publisher']
