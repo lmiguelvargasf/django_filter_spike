@@ -13,6 +13,7 @@ django-extensions = "^3.0.3"
 ipython = "^7.16.1"
 djangorestframework = "^3.11.0"
 django-filter = "^2.3.0"
+django-crispy-forms = "^1.9.2"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^19.10b0", allow-prereleases = true}
