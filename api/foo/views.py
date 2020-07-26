@@ -1,4 +1,5 @@
 from rest_framework.viewsets import ModelViewSet
+from rest_framework import filters
 
 from foo.models import Author, Book, Publisher
 from .filters import AuthorFilter, BookFilter
@@ -20,3 +21,5 @@ class BookViewSet(ModelViewSet):
 class PublisherViewSet(ModelViewSet):
     queryset = Publisher.objects.all()
     serializer_class = PublisherSerializer
+    filter_backends = [filters.SearchFilter]
+    search_fields = ['name', 'country']
