@@ -11,15 +11,6 @@ class DocumentFactory(factory.django.DjangoModelFactory):
         model = "foo.Document"
 
 
-class BookFactory(factory.DjangoModelFactory):
-    title = factory.Faker("catch_phrase")
-    author = factory.Faker("name")
-    pages = FuzzyInteger(100, 500, 10)
-
-    class Meta:
-        model = "foo.Book"
-
-
 class AuthorFactory(factory.DjangoModelFactory):
     first_name = factory.Faker("first_name")
     last_name = factory.Faker("last_name")
@@ -27,6 +18,15 @@ class AuthorFactory(factory.DjangoModelFactory):
 
     class Meta:
         model = "foo.Author"
+
+
+class BookFactory(factory.DjangoModelFactory):
+    title = factory.Faker("catch_phrase")
+    author = factory.SubFactory(AuthorFactory)
+    pages = FuzzyInteger(100, 500, 10)
+
+    class Meta:
+        model = "foo.Book"
 
 
 class PublisherFactory(factory.DjangoModelFactory):
