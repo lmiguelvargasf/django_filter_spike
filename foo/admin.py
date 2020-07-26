@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Document, Book, Author
+from .models import Document, Book, Author, Publisher
 
 
 @admin.register(Document)
@@ -9,3 +9,4 @@ class DocumentAdmin(admin.ModelAdmin):
 
 admin.site.register(Book)
 admin.site.register(Author)
+admin.site.register(Publisher)
