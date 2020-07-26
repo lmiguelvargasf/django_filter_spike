@@ -123,6 +123,17 @@ six = ">=1.2"
 
 [[package]]
 category = "main"
+description = "Web APIs for Django, made easy."
+name = "djangorestframework"
+optional = false
+python-versions = ">=3.5"
+version = "3.11.0"
+
+[package.dependencies]
+django = ">=1.11"
+
+[[package]]
+category = "main"
 description = "A versatile test fixtures replacement based on thoughtbot's factory_bot for Ruby."
 name = "factory-boy"
 optional = false
@@ -358,7 +369,7 @@ python-versions = "*"
 version = "0.2.5"
 
 [metadata]
-content-hash = "dd69a4c659a4a0260e0522acada01d9b7f485ef07362429bc5c612b15f64534d"
+content-hash = "20d7f749845cfdd922f6168b2125b67b960fb57a502eb07028ad0f657e3504a6"
 lock-version = "1.0"
 python-versions = "^3.8"
 
@@ -406,6 +417,10 @@ django = [
 django-extensions = [
     {file = "django-extensions-3.0.3.tar.gz", hash = "sha256:6230898b1e1d5deb3ddab8335b2d270edb7afa4ef916a95e479a19fdfb0464cb"},
     {file = "django_extensions-3.0.3-py2.py3-none-any.whl", hash = "sha256:d5fcf8f3bab019487e07473c24453bccd5acfb4440f3ef36788294c307b09d4c"},
+]
+djangorestframework = [
+    {file = "djangorestframework-3.11.0-py3-none-any.whl", hash = "sha256:05809fc66e1c997fd9a32ea5730d9f4ba28b109b9da71fccfa5ff241201fd0a4"},
+    {file = "djangorestframework-3.11.0.tar.gz", hash = "sha256:e782087823c47a26826ee5b6fa0c542968219263fb3976ec3c31edab23a4001f"},
 ]
 factory-boy = [
     {file = "factory_boy-2.12.0-py2.py3-none-any.whl", hash = "sha256:728df59b372c9588b83153facf26d3d28947fc750e8e3c95cefa9bed0e6394ee"},
