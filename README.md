@@ -22,7 +22,13 @@ the methods defined in the managers.
 It you want to chain methods defined in managers, you should define a custom `QuerySet`.
 ([see logic][custom-queryset-manager])
 
+### Custom queryset used as manager
+
+When defining just custom querysets in the manager, it is possible to simply extend the queryset
+and set it as the manager. ([see logic][query-set-as-manager])
+
 [custom-manager]: ./foo/models/document.py
 [custom-queryset-manager]: ./foo/models/author.py
 [managers]: https://docs.djangoproject.com/en/dev/topics/db/managers/
 [multiple-managers]: ./foo/models/book.py
+[query-set-as-manager]: ./foo/models/publisher.py
