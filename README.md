@@ -1,8 +1,13 @@
 # Managers Spike
 
-The purpose of this "project" is to play around with [Django's Managers][managers].
+The purpose of this "project" is to play around with Django's [Managers][managers].
 
 ## Managers
+
+### What is a Manager?
+
+In a Django model, a manager is the interface that interacts with the database.
+I have provided [an answer][answer] on StackOverflow with further explanations.
 
 ### Custom manager overrides default manager
 
