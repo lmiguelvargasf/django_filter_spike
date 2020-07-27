@@ -129,3 +129,9 @@ REST_FRAMEWORK = {
         'django_filters.rest_framework.DjangoFilterBackend',
     ),
 }
+
+# graph_models
+GRAPH_MODELS = {
+  'all_applications': True,
+  'group_models': True,
+}
