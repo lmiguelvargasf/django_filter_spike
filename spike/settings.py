@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_filters',
     'crispy_forms',
+    'reversion',
     'foo.apps.FooConfig',
 ]
 

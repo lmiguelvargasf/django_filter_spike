@@ -18,6 +18,7 @@ Werkzeug = "^1.0.1"
 pyparsing = "^2.4.7"
 pydot = "^1.4.1"
 django-silk = "^4.0.1"
+django-reversion = "^3.0.7"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^19.10b0", allow-prereleases = true}

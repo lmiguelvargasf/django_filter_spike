@@ -170,6 +170,17 @@ Django = ">=2.2"
 
 [[package]]
 category = "main"
+description = "An extension to the Django web framework that provides version control for model instances."
+name = "django-reversion"
+optional = false
+python-versions = ">=3.6"
+version = "3.0.7"
+
+[package.dependencies]
+django = ">=1.11"
+
+[[package]]
+category = "main"
 description = "Silky smooth profiling for the Django Framework"
 name = "django-silk"
 optional = false
@@ -543,7 +554,7 @@ dev = ["pytest", "pytest-timeout", "coverage", "tox", "sphinx", "pallets-sphinx-
 watchdog = ["watchdog"]
 
 [metadata]
-content-hash = "2fb0d281379b2d1806aea08bd8fe714da801d7d57deacdf882d6fae37578cd44"
+content-hash = "ab7a07bab17fae76c04a41a06a1e375192d7135dbe53f1ffd85b963bc03c4b4c"
 lock-version = "1.0"
 python-versions = "^3.8"
 
@@ -610,6 +621,10 @@ django-extensions = [
 django-filter = [
     {file = "django-filter-2.3.0.tar.gz", hash = "sha256:11e63dd759835d9ba7a763926ffb2662cf8a6dcb4c7971a95064de34dbc7e5af"},
     {file = "django_filter-2.3.0-py3-none-any.whl", hash = "sha256:616848eab6fc50193a1b3730140c49b60c57a3eda1f7fc57fa8505ac156c6c75"},
+]
+django-reversion = [
+    {file = "django-reversion-3.0.7.tar.gz", hash = "sha256:72fc53580a6b538f0cfff10f27f42333f67d79c406399289c94ec5a193cfb3e1"},
+    {file = "django_reversion-3.0.7-py3-none-any.whl", hash = "sha256:ecab4703ecc0871dc325c3e100139def84eb153622df3413fbcd9de7d3503c78"},
 ]
 django-silk = [
     {file = "django_silk-4.0.1-py2.py3-none-any.whl", hash = "sha256:56c2c5aefd1c65161df61e49cf2674862a748a43e81c7c470bcbc4c35c53491c"},
